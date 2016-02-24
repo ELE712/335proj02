@@ -19,9 +19,16 @@
 class CDatabaseSortable: public CDatabase, public SortableVector{
     CDatabaseSortable(CDatabase& data): CDatabase(data){}
     
+    virtual unsigned int getSize() const{
+        return m_allEmp.size();
+    }
     
+    virtual void swap(int i,int j){
+        Employee* temp = m_allEmp[i];
+        m_allEmp[i] = m_allEmp[j];
+        m_allEmp[j] = temp;
+    }
 };
-
 
 #endif /* CDATABASESORTABLE_H */
 
