@@ -1,15 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   BubbleSortIncreasing.h
- * Author: zekezandbergen
- *
- * Created on February 9, 2016, 2:00 PM
- */
+/******************************************************
+ ** FILE: BubbleSortIncreasing.h
+ **
+ ** ABSTRACT:
+ ** Increasing bubblesort. Taken from in class example
+ **
+ **
+ ** AUTHOR: Alex Liu
+ **
+ ** CREATION DATE: 2-23-16
+ **
+ *******************************************************/
 
 #ifndef BUBBLESORTINCREASING_H
 #define BUBBLESORTINCREASING_H
@@ -22,8 +22,6 @@ public:
     }
 
 };
-
-
 
 #endif /* BUBBLESORTINCREASING_H */
 
