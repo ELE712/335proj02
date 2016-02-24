@@ -17,6 +17,8 @@
 #include "SortableVector.h"
 
 class CDatabaseSortable: public CDatabase, public SortableVector{
+    CDatabaseSortable(CDatabase& data): CDatabase(data){}
+    
     
 };
 
