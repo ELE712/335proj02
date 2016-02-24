@@ -1,15 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   main.cpp
- * Author: zekezandbergen
- *
- * Created on February 23, 2016, 8:53 PM
- */
+/******************************************************
+ ** FILE: main.cpp
+ **
+ ** ABSTRACT:
+ ** main output of program
+ **
+ **
+ ** AUTHOR: Ezekiel Zandbergen, Cynthia Obia
+ **
+ ** CREATION DATE: 2-23-16
+ **
+ *******************************************************/
 
 #include <cstdlib>
 #include <iostream>
@@ -24,9 +24,6 @@
 
 using namespace std;
 
-/*
- * 
- */
 int main(int argc, char** argv) {
   Employee e1("John", "Smith1", 10000, 2011);
   Employee e2("John", "Smith2", 10000, 2011);
