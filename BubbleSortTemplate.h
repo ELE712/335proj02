@@ -1,16 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   BubbleSortTemplate.h
- * Author: zekezandbergen
- *
- * Created on February 9, 2016, 1:51 PM
- */
-
+/******************************************************
+ ** FILE: BubbleSortTemplate.h
+ **
+ ** ABSTRACT:
+ ** Template for bs increasing and decreasing. Taken from in class example
+ **
+ **
+ ** AUTHOR: Alex Liu
+ **
+ ** CREATION DATE: 2-23-16
+ **
+ *******************************************************/
 #ifndef BUBBLESORTTEMPLATE_H
 #define BUBBLESORTTEMPLATE_H
 #include "SortableVector.h"
