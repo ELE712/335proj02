@@ -1,15 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   SortableVector.h
- * Author: zekezandbergen
- *
- * Created on February 2, 2016, 1:59 PM
- */
+/******************************************************
+ ** FILE: SortableVector
+ **
+ ** ABSTRACT:
+ ** Sortable vector template to use in bubblesort. Taken from in class example
+ **
+ **
+ ** AUTHOR: Alex Liu
+ **
+ ** CREATION DATE: 2-23-16
+ **
+ *******************************************************/
 
 #ifndef SORTABLEVECTOR_H
 #define SORTABLEVECTOR_H
@@ -20,8 +20,6 @@ public:
     virtual bool smaller(int i,int j) const=0;
     virtual void swap(int i,int j)=0;
 };
-
-
 
 #endif /* SORTABLEVECTOR_H */
 
