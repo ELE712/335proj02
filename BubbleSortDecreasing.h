@@ -1,15 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   BubbleSortDecreasing.h
- * Author: zekezandbergen
- *
- * Created on February 9, 2016, 1:56 PM
- */
+/******************************************************
+ ** FILE: BubbleSortDecreasing.h
+ **
+ ** ABSTRACT:
+ ** Decreasing Bubble Sort. Taken from in class example
+ **
+ **
+ ** AUTHOR: Alex Liu
+ **
+ ** CREATION DATE: 1-27-16
+ **
+ *******************************************************/
 
 #ifndef BUBBLESORTDECREASING_H
 #define BUBBLESORTDECREASING_H
