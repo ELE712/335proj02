@@ -13,20 +13,15 @@
 
 #ifndef _CEMPLOYEE_H
 #define _CEMPLOYEE_H
-#include <ctime>
-using std::tm;
 #include <string>
-using std::string;
 #include <algorithm>
-using std::swap;
 #include<iostream>
-using std::cout;
-
+using namespace std;
 class CEmployee{
 protected:
     string m_firstName;
     string m_lastName;
-    int m_hiringYear;
+    unsigned int m_hiringYear;
     unsigned int m_salary;
 public:
     // default constructor
@@ -36,10 +31,10 @@ public:
         m_hiringYear = 0;
         m_salary = 0;
     }
-    CEmployee(const string &first, const string &last, const unsigned int &sal, const tm &yr){
+    CEmployee(const string &first, const string &last, const unsigned int &sal, const unsigned int &yr){
         m_firstName = first;
         m_lastName = last;
-        m_hiringYear = yr.tm_year;
+        m_hiringYear = yr;
         m_salary = sal;
     }
     CEmployee(const CEmployee &emp) {
@@ -87,7 +82,7 @@ public:
         return m_salary;
     }
     virtual void DisplayEmployee() const{
-        cout << getFirstName() << " " << getLastName() << "  " << "Salary:" << getSal() << "  Hiring year:" << getYear();
+        cout << getFirstName() << " " << getLastName() << "  " << "Salary:" << getSal() << "  Hiring year:" << getYear() << endl;
     }
 };
 

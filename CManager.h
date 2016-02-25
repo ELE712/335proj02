@@ -14,14 +14,11 @@
 #ifndef _CMANAGER_H
 #define _CMANAGER_H
 #include <string>
-using std::string;
 #include <vector>
-using std::vector;
 #include <algorithm>
-using std::swap;
 #include<iostream>
-using std::cout; using std::endl;
 #include "CEmployee.h"
+using namespace std;
 
 class CManager: public CEmployee{
 protected:
@@ -31,7 +28,7 @@ public:
     CManager():CEmployee() {
         m_depName = "";
     }
-    CManager(const string &first, const string &last, const unsigned int &sal, const tm &yr,const string &dep, const vector<CEmployee*> &vect) :CEmployee(first,last,sal,yr) {
+    CManager(const string &first, const string &last, const unsigned int &sal, const unsigned int &yr, const string &dep, const vector<CEmployee*> &vect) :CEmployee(first,last,sal,yr) {
         m_depName = dep;
         m_empManaged = vect;
     }
@@ -39,6 +36,10 @@ public:
     CManager(const CManager &man):CEmployee(man){
         m_depName = man.m_depName;
         m_empManaged = man.m_empManaged;
+    }
+    
+    virtual ~CManager(){
+        
     }
     // = operator
     CManager& operator=(CManager man) {
@@ -61,8 +62,8 @@ public:
     }
     virtual void DisplayEmployee() const {
         CEmployee::DisplayEmployee();
-        cout << "           " << getDepartment() << "      Subordinates:" << (getManaged()).size() << endl;
         if ((getManaged()).size() >= 1) {
+            cout << "           " << getDepartment() << "      Subordinates:" << (getManaged()).size() << endl;
             for (auto i : getManaged()) {
                 cout << "       Subordinates:";
                 (*i).CEmployee::DisplayEmployee();

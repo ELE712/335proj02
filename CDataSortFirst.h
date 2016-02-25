@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-/*
+/* 
  * File:   CDataSortFirst.h
  * Author: zekezandbergen
  *
@@ -14,19 +14,20 @@
 #ifndef CDATASORTFIRST_H
 #define CDATASORTFIRST_H
 #include "CDatabaseSortable.h"
-#include "SortableVector.h"
+#include <vector>
+using namespace std;
 
-class CDataSortFirst: public CDatabaseSortable{    
+class CDataSortFirst: public CDatabaseSortable{
 public:
-    //CDataSortFirst(CDatabaseSortable data);
-    
+    CDataSortFirst(vector<CEmployee*> data): CDatabaseSortable(data){}
     virtual bool smaller(int i,int j) const{
-        if ((m_allEmp[i]->getFirstName() < m_allEmp[j]->getFirstName()) or (m_allEmp[i]->getFirstName() == m_allEmp[j]->getFirstName()))
-            return 1;
-        else
-            return 0;
-    }
-    
+            if (m_allEmp[i]->getFirstName()<m_allEmp[j]->getFirstName())
+                return 1;
+            else
+                return 0;
+        }
 };
 
+
 #endif /* CDATASORTFIRST_H */
+

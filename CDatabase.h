@@ -20,24 +20,20 @@
 
 using namespace std;
 class CDatabase{
-private:
-    CDatabase() {} //default constructor not needed
 protected:
     vector<CEmployee*> m_allEmp; //to hold all employees
 public:
+    CDatabase() {}
     CDatabase(vector<CEmployee*> emp_vec){ 
         //constructs vector from referenced vector
-        for (auto i : emp_vec)
-            AddRecord(i);
+        m_allEmp = emp_vec;
     }
-    CDatabase(const CDatabase &data) {
+    CDatabase(const CDatabase& data){
         //copy constructor
         m_allEmp = data.m_allEmp;
     }
     virtual ~CDatabase() {
         //destructor
-        for (auto i : m_allEmp)
-            delete i;
     }
     CDatabase& operator=(CDatabase data) {
         //assignment operator
@@ -48,10 +44,13 @@ public:
         //adds employee to vector
         m_allEmp.push_back(emp);
     }
+    vector<CEmployee*> GetEmps(){
+        return m_allEmp;
+    }
     void DisplayRecords() {
         //display all managers and employees in database
-        for (auto i : m_allEmp)
-            (*i).DisplayEmployee();
+        for (CEmployee* i : m_allEmp)
+            i->DisplayEmployee();
     }
 };
 

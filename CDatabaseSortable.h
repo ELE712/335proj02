@@ -17,7 +17,8 @@
 #include "SortableVector.h"
 
 class CDatabaseSortable: public CDatabase, public SortableVector{
-    CDatabaseSortable(vector<CEmployee*> emp_vec): CDatabase(emp_vec){}
+public:
+    CDatabaseSortable(vector<CEmployee*> data): CDatabase(data){}
     virtual unsigned int getSize() const{
         return m_allEmp.size();
     }

@@ -17,7 +17,7 @@
 
 class CDataSortSalary: public CDatabaseSortable{
 public:
-    
+    CDataSortSalary(vector<CEmployee*> data): CDatabaseSortable(data){}
     virtual bool smaller(int i,int j) const{
         if ((m_allEmp[i]->getSal() < m_allEmp[j]->getSal()) or (m_allEmp[i]->getSal() == m_allEmp[j]->getSal()))
             return 1;

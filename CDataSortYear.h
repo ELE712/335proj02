@@ -17,7 +17,7 @@
 
 class CDataSortYear: public CDatabaseSortable{
 public:
-    
+    CDataSortYear(vector<CEmployee*> data): CDatabaseSortable(data){}
     virtual bool smaller(int i,int j) const{
         if ((m_allEmp[i]->getYear() < m_allEmp[j]->getYear()) or (m_allEmp[i]->getYear() == m_allEmp[j]->getYear()))
             return 1;
