@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-/* 
+/*
  * File:   CDataSortLast.h
  * Author: zekezandbergen
  *
@@ -16,9 +16,16 @@
 #include "CDatabaseSortable.h"
 
 class CDataSortLast: public CDatabaseSortable{
+public:
+    
+    virtual bool smaller(int i,int j) const{
+        if ((m_allEmp[i]->getLastName() < m_allEmp[j]->getLastName()) or (m_allEmp[i]->getLastName() == m_allEmp[j]->getLastName()))
+            return 1;
+        else 
+            return 0;
+    }
     
 };
 
 
 #endif /* CDATASORTLAST_H */
-
