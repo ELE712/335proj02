@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-/* 
+/*
  * File:   CDataSortSalary.h
  * Author: zekezandbergen
  *
@@ -16,8 +16,16 @@
 #include "CDatabaseSortable.h"
 
 class CDataSortSalary: public CDatabaseSortable{
+public:
+    
+    virtual bool smaller(int i,int j) const{
+        if ((m_allEmp[i]->getSal() < m_allEmp[j]->getSal()) or (m_allEmp[i]->getSal() == m_allEmp[j]->getSal()))
+            return 1;
+        else 
+            return 0;
+    }
+    
     
 };
 
 #endif /* CDATASORTSALARY_H */
-
