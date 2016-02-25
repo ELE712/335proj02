@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-/* 
+/*
  * File:   CDataSortYear.h
  * Author: zekezandbergen
  *
@@ -16,8 +16,15 @@
 #include "CDatabaseSortable.h"
 
 class CDataSortYear: public CDatabaseSortable{
+public:
+    
+    virtual bool smaller(int i,int j) const{
+        if ((m_allEmp[i]->getYear() < m_allEmp[j]->getYear()) or (m_allEmp[i]->getYear() == m_allEmp[j]->getYear()))
+            return 1;
+        else 
+            return 0;
+    }
     
 };
 
 #endif /* CDATASORTYEAR_H */
-
