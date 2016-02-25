@@ -25,25 +25,20 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-  Employee e1("John", "Smith1", 10000, 2011);
-  Employee e2("John", "Smith2", 10000, 2011);
-  Employee e3("John", "Smith3", 10000, 2011);
-  Manager m1("Tom", "Cruise", 40000, 2000, "Sales");
-  Employee e4("John", "Doe1", 10000, 2011);
-  Employee e5("John", "Doe2", 10000, 2011);
-  Employee e6("John", "Doe3", 10000, 2011);
-  Manager m2("Alice", "Cooper", 45000, 2000, "Human Resources");
+  vector<CEmployee*> mv1; //used for manager vector
+ 
+
+  CDatabase cds;
+  cds.AddRecord(new CEmployee("John", "Smith1", 10000, 2011));
+  cds.AddRecord(new CEmployee("John", "Smith2", 20000, 2012));
+  cds.AddRecord(new CEmployee("John", "Smith3", 30000, 2013));
+  cds.AddRecord(new CManager("Tom", "Cruise", 40000, 2000, "Sales", mv1));
+  cds.AddRecord(new CEmployee("John", "Doe1", 15000, 2010));
+  cds.AddRecord(new CEmployee("John", "Doe2", 25000, 2011));
+  cds.AddRecord(new CEmployee("John", "Doe3", 35000, 2012));
+  cds.AddRecord(new CManager("Alice", "Cooper", 45000, 2000, "Human Resources", mv1));
   
-  CDatabaseSortable cds;
-  cds.addRecord(&e1);
-  cds.addRecord(&e2);
-  cds.addRecord(&e3);
-  cds.addRecord(&m1);
-  cds.addRecord(&e4);
-  cds.addRecord(&e5);
-  cds.addRecord(&e6);
-  cds.addRecord(&m2);
-  
+  /*
   CDataSortFirst sf(cds);
   CDataSortLast sl(cds);
   CDataSortSalary ss(cds);
@@ -86,7 +81,7 @@ int main(int argc, char** argv) {
   cout << "*********************** After Sorting By Hireyear Decreasing" << endl;
   bsd.sort(&sy)
   cds.displayRecords();
-  
+  */
   return 0;
 }
 
