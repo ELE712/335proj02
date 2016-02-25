@@ -17,14 +17,13 @@
 #include "SortableVector.h"
 
 class CDatabaseSortable: public CDatabase, public SortableVector{
-    CDatabaseSortable(CDatabase& data): CDatabase(data){}
-    
+    CDatabaseSortable(vector<CEmployee*> emp_vec): CDatabase(emp_vec){}
     virtual unsigned int getSize() const{
         return m_allEmp.size();
     }
     
     virtual void swap(int i,int j){
-        Employee* temp = m_allEmp[i];
+        CEmployee* temp = m_allEmp[i];
         m_allEmp[i] = m_allEmp[j];
         m_allEmp[j] = temp;
     }
