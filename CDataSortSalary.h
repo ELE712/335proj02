@@ -1,15 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * File:   CDataSortSalary.h
- * Author: zekezandbergen
- *
- * Created on February 23, 2016, 9:15 PM
- */
+/******************************************************
+ ** FILE: CDataSortSalary.h
+ **
+ ** ABSTRACT:
+ ** Sort database by salary
+ **
+ **
+ ** AUTHOR: Ezekiel Zandbergen, Cynthia Obia
+ **
+ ** CREATION DATE: 2-23-16
+ **
+ *******************************************************/
 
 #ifndef CDATASORTSALARY_H
 #define CDATASORTSALARY_H
@@ -24,8 +24,6 @@ public:
         else 
             return 0;
     }
-    
-    
 };
 
 #endif /* CDATASORTSALARY_H */
