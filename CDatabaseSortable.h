@@ -1,15 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   CDatabaseSortable.h
- * Author: zekezandbergen
- *
- * Created on February 23, 2016, 9:06 PM
- */
+/******************************************************
+ ** FILE: CDatabaseSortable
+ **
+ ** ABSTRACT:
+ ** Sortable database class, links cdatabase with sortablevector
+ **
+ **
+ ** AUTHOR: Ezekiel Zandbergen, Cynthia Obia
+ **
+ ** CREATION DATE: 2-23-16
+ **
+ *******************************************************/
 
 #ifndef CDATABASESORTABLE_H
 #define CDATABASESORTABLE_H
@@ -31,4 +31,3 @@ public:
 };
 
 #endif /* CDATABASESORTABLE_H */
-
