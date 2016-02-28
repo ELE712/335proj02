@@ -1,15 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * File:   CDataSortYear.h
- * Author: zekezandbergen
- *
- * Created on February 23, 2016, 9:14 PM
- */
+/******************************************************
+ ** FILE: CDataSortYear
+ **
+ ** ABSTRACT:
+ ** Sort database by hire year
+ **
+ **
+ ** AUTHOR: Ezekiel Zandbergen, Cynthia Obia
+ **
+ ** CREATION DATE: 2-23-16
+ **
+ *******************************************************/
 
 #ifndef CDATASORTYEAR_H
 #define CDATASORTYEAR_H
@@ -24,7 +24,6 @@ public:
         else 
             return 0;
     }
-    
 };
 
 #endif /* CDATASORTYEAR_H */
