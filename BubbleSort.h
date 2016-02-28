@@ -1,16 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   BubbleSort.h
- * Author: zekezandbergen
- *
- * Created on February 2, 2016, 2:04 PM
- */
-
+/******************************************************
+ ** FILE: BubbleSort.h
+ **
+ ** ABSTRACT:
+ ** BubbleSort algorithms. Taken from in class example
+ **
+ **
+ ** AUTHOR: Ezekiel Zandbergen, Cynthia Obia
+ **
+ ** CREATION DATE: 2-23-16
+ **
+ *******************************************************/
+ 
 #ifndef BUBBLESORT_H
 #define BUBBLESORT_H
 #include "SortableVector.h"
@@ -31,25 +31,7 @@ public:
             n--;
         }
     }
-    
-    
-    /*
-    void sortDecreasingFaster(SortableVector* sortable){
-        bool sorted=false;
-        int i=0;
-        while (!sorted && (i<sortable->getSize())){
-            sorted = true;
-            for (int j=i; j<sortable->getSize()-1; ++j){
-                if (sortable->smaller(j,j+1)){
-                    sortable->swap(j,j+1);
-                    sorted=false;
-                }
-            }
-            ++i;
-        }
-    }
-     */
-    
+  
     void sortIncreasing(SortableVector* sortable){
         bool sorted = false;
         int n = sortable->getSize();
@@ -66,8 +48,4 @@ public:
     }
 };
 
-
-
-
 #endif /* BUBBLESORT_H */
-
