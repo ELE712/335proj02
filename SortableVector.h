@@ -5,7 +5,7 @@
  ** Sortable vector template to use in bubblesort. Taken from in class example
  **
  **
- ** AUTHOR: Alex Liu
+ ** AUTHOR: Ezekiel Zandbergen, Cynthia Obia
  **
  ** CREATION DATE: 2-23-16
  **
