@@ -1,15 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   CDataSortFirst.h
- * Author: zekezandbergen
- *
- * Created on February 23, 2016, 9:12 PM
- */
+/******************************************************
+ ** FILE: CDataSortFirst.h
+ **
+ ** ABSTRACT:
+ ** Sort database by first name
+ **
+ **
+ ** AUTHOR: Ezekiel Zandbergen, Cynthia Obia
+ **
+ ** CREATION DATE: 2-23-16
+ **
+ *******************************************************/
 
 #ifndef CDATASORTFIRST_H
 #define CDATASORTFIRST_H
